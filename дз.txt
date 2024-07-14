@@ -1,0 +1,11 @@
+ import random as pd
+lst = ['robot'] * 10
+lst += ['human'] * 10
+random.shuffle(lst)
+data = pd.DataFrame({'whoAmI':lst})
+data.head()
+unicum_values = data['whoAmI'].unicum()
+one_hot_data = pd.DataFrame()
+for value in unicum_values
+  one_hot_data[value] = (Data[whoAmI] == value).astype(int)
+one_hot_data.head()
